@@ -4,7 +4,7 @@
   --vt-c-white-soft: #f8f8f8;
   --vt-c-white-mute: #f2f2f2;
 
-  --vt-c-black: #181818;
+  --vt-c-black: rgb(32 32 42);
   --vt-c-black-soft: #222222;
   --vt-c-black-mute: #282828;
 
@@ -50,14 +50,6 @@
   }
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  font-weight: normal;
-}
-
 body {
   min-height: 100vh;
   color: var(--color-text);
@@ -79,7 +71,6 @@ body {
     'Droid Sans',
     'Helvetica Neue',
     sans-serif;
-  font-size: 15px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
