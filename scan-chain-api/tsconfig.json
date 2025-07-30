@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "strict": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@app/*": ["*"]
+    },
+    "outDir": "dist"
+  },
+  "include": ["src", "vite-env.d.ts"]
+}

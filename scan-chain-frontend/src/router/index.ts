@@ -10,8 +10,13 @@ const router = createRouter({
       children: [
         {
           path: '/',
-          name: 'search',
+          name: 'Search',
           component: () => import('@/features/search/components/SearchPage.vue'),
+        },
+        {
+          path: '/test',
+          name: 'Test',
+          component: () => import('@/features/search/components/TestPage.vue'),
         },
       ]
     }
