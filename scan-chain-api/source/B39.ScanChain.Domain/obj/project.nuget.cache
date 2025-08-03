@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "TlZZbGn5DaqyYiAJBpRZs41zN2TPH509YxDL6LSrFk8TGobpU6Fx5/TwUPWkb5aXuStzO0F4Jr7qP0pny28F1g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\luong.ha\\Documents\\Dev\\ScanChain\\scan-chain-api\\source\\B39.ScanChain.Domain\\B39.ScanChain.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\luong.ha\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "C:\\Users\\luong.ha\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

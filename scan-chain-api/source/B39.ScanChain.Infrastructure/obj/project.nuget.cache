@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "lIJ4jVxrHJ4YiBiZGtrEX/6sd+0LOFE7AKeTKh/AjrOYcms2dKaJKprwykEAayjbOSqaVTe6qZRS26PqKPb6zw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\luong.ha\\Documents\\Dev\\ScanChain\\scan-chain-api\\source\\B39.ScanChain.Infrastructure\\B39.ScanChain.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\luong.ha\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
+    "C:\\Users\\luong.ha\\.nuget\\packages\\mediatr\\12.5.0\\mediatr.12.5.0.nupkg.sha512",
+    "C:\\Users\\luong.ha\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\luong.ha\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "C:\\Users\\luong.ha\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\luong.ha\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
+    "C:\\Users\\luong.ha\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

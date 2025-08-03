@@ -1,0 +1,16 @@
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.ScanChain.Infrastructure\bin\Debug\net8.0\B39.ScanChain.Infrastructure.deps.json
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.ScanChain.Infrastructure\bin\Debug\net8.0\B39.ScanChain.Infrastructure.dll
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.ScanChain.Infrastructure\bin\Debug\net8.0\B39.ScanChain.Infrastructure.pdb
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.ScanChain.Infrastructure\bin\Debug\net8.0\B39.ScanChain.Domain.dll
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.ScanChain.Infrastructure\bin\Debug\net8.0\B39.ScanChain.Domain.pdb
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.ScanChain.Infrastructure\obj\Debug\net8.0\B39.ScanChain.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.ScanChain.Infrastructure\obj\Debug\net8.0\B39.ScanChain.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.ScanChain.Infrastructure\obj\Debug\net8.0\B39.ScanChain.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.ScanChain.Infrastructure\obj\Debug\net8.0\B39.ScanChain.Infrastructure.AssemblyInfo.cs
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.ScanChain.Infrastructure\obj\Debug\net8.0\B39.ScanChain.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.ScanChain.Infrastructure\obj\Debug\net8.0\B39.ScanChain.Infrastructure.sourcelink.json
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.ScanChain.Infrastructure\obj\Debug\net8.0\B39.Scan.B0827B1D.Up2Date
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.ScanChain.Infrastructure\obj\Debug\net8.0\B39.ScanChain.Infrastructure.dll
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.ScanChain.Infrastructure\obj\Debug\net8.0\refint\B39.ScanChain.Infrastructure.dll
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.ScanChain.Infrastructure\obj\Debug\net8.0\B39.ScanChain.Infrastructure.pdb
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.ScanChain.Infrastructure\obj\Debug\net8.0\ref\B39.ScanChain.Infrastructure.dll

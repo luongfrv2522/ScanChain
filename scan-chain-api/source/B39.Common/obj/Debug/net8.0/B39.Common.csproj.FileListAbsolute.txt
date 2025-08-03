@@ -1,0 +1,12 @@
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.Common\bin\Debug\net8.0\B39.Common.deps.json
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.Common\bin\Debug\net8.0\B39.Common.dll
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.Common\bin\Debug\net8.0\B39.Common.pdb
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.Common\obj\Debug\net8.0\B39.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.Common\obj\Debug\net8.0\B39.Common.AssemblyInfoInputs.cache
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.Common\obj\Debug\net8.0\B39.Common.AssemblyInfo.cs
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.Common\obj\Debug\net8.0\B39.Common.csproj.CoreCompileInputs.cache
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.Common\obj\Debug\net8.0\B39.Common.sourcelink.json
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.Common\obj\Debug\net8.0\B39.Common.dll
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.Common\obj\Debug\net8.0\refint\B39.Common.dll
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.Common\obj\Debug\net8.0\B39.Common.pdb
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.Common\obj\Debug\net8.0\ref\B39.Common.dll

@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi"/>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection"/>
+        <PackageReference Include="MediatR"/>
+        <PackageReference Include="AutoMapper"/>
+        <PackageReference Include="Serilog.AspNetCore"/>
+    </ItemGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer"/>
+        <PackageReference Include="System.IdentityModel.Tokens.Jwt"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\B39.ScanChain.Domain\B39.ScanChain.Domain.csproj" />
+    </ItemGroup>
+
+</Project>

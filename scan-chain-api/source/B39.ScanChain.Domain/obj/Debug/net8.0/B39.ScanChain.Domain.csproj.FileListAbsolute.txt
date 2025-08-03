@@ -1,0 +1,13 @@
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.ScanChain.Domain\bin\Debug\net8.0\B39.ScanChain.Domain.deps.json
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.ScanChain.Domain\bin\Debug\net8.0\B39.ScanChain.Domain.dll
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.ScanChain.Domain\bin\Debug\net8.0\B39.ScanChain.Domain.pdb
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.ScanChain.Domain\obj\Debug\net8.0\B39.ScanChain.Domain.csproj.AssemblyReference.cache
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.ScanChain.Domain\obj\Debug\net8.0\B39.ScanChain.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.ScanChain.Domain\obj\Debug\net8.0\B39.ScanChain.Domain.AssemblyInfoInputs.cache
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.ScanChain.Domain\obj\Debug\net8.0\B39.ScanChain.Domain.AssemblyInfo.cs
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.ScanChain.Domain\obj\Debug\net8.0\B39.ScanChain.Domain.csproj.CoreCompileInputs.cache
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.ScanChain.Domain\obj\Debug\net8.0\B39.ScanChain.Domain.sourcelink.json
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.ScanChain.Domain\obj\Debug\net8.0\B39.ScanChain.Domain.dll
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.ScanChain.Domain\obj\Debug\net8.0\refint\B39.ScanChain.Domain.dll
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.ScanChain.Domain\obj\Debug\net8.0\B39.ScanChain.Domain.pdb
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\source\B39.ScanChain.Domain\obj\Debug\net8.0\ref\B39.ScanChain.Domain.dll

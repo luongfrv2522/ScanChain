@@ -1,0 +1,36 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Core packages -->
+    <PackageVersion Include="Microsoft.NETCore.App.Ref" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.AspNetCore.App.Ref" Version="8.0.0" />
+    <!-- Dapper for lightweight DB access -->
+    <PackageVersion Include="Dapper" Version="2.1.35" />
+    <!-- FluentValidation for input validation -->
+    <PackageVersion Include="FluentValidation" Version="11.7.0" />
+    <!-- configuration -->
+    <PackageVersion Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <!-- Swashbuckle for Swagger/OpenAPI -->
+    <PackageVersion Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="8.0.13" />
+    <!-- MediatR -->
+    <PackageVersion Include="MediatR" Version="12.5.0" />
+    <!-- Optional: Newtonsoft.Json if needed -->
+    <PackageVersion Include="Newtonsoft.Json" Version="13.0.3" />
+    <!-- Optional: Newtonsoft.Json if needed -->
+    <PackageVersion Include="AutoMapper" Version="14.0.0" />
+    <!--    Logging    -->
+    <PackageVersion Include="Serilog.AspNetCore" Version="8.0.3" />
+    <PackageVersion Include="Serilog.Sinks.Async" Version="2.1.0" />
+    <PackageVersion Include="Serilog.Sinks.File" Version="7.0.0" />
+    <PackageVersion Include="Serilog.Enrichers.Environment" Version="3.0.1" />
+    <PackageVersion Include="Serilog.Enrichers.Process" Version="3.0.0" />
+    <PackageVersion Include="Serilog.Enrichers.Thread" Version="4.0.0" />
+    <!--    JWT    -->
+    <PackageVersion Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.17" />
+    <PackageVersion Include="System.IdentityModel.Tokens.Jwt" Version="8.12.1" />
+  </ItemGroup>
+</Project>

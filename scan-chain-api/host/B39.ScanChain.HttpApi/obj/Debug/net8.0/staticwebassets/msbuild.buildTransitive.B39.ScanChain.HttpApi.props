@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\B39.ScanChain.HttpApi.props" />
+</Project>
