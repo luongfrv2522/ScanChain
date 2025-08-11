@@ -614,6 +614,16 @@
           }
         }
       },
+      "B39.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/B39.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/B39.Common.dll": {}
+        }
+      },
       "B39.ScanChain.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -1573,6 +1583,11 @@
         "system.identitymodel.tokens.jwt.nuspec"
       ]
     },
+    "B39.Common/1.0.0": {
+      "type": "project",
+      "path": "../B39.Common/B39.Common.csproj",
+      "msbuildProject": "../B39.Common/B39.Common.csproj"
+    },
     "B39.ScanChain.Domain/1.0.0": {
       "type": "project",
       "path": "../B39.ScanChain.Domain/B39.ScanChain.Domain.csproj",
@@ -1582,6 +1597,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "AutoMapper >= 14.0.0",
+      "B39.Common >= 1.0.0",
       "B39.ScanChain.Domain >= 1.0.0",
       "MediatR >= 12.5.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.17",
@@ -1617,6 +1633,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "C:\\Users\\luong.ha\\Documents\\Dev\\ScanChain\\scan-chain-api\\source\\B39.Common\\B39.Common.csproj": {
+              "projectPath": "C:\\Users\\luong.ha\\Documents\\Dev\\ScanChain\\scan-chain-api\\source\\B39.Common\\B39.Common.csproj"
+            },
             "C:\\Users\\luong.ha\\Documents\\Dev\\ScanChain\\scan-chain-api\\source\\B39.ScanChain.Domain\\B39.ScanChain.Domain.csproj": {
               "projectPath": "C:\\Users\\luong.ha\\Documents\\Dev\\ScanChain\\scan-chain-api\\source\\B39.ScanChain.Domain\\B39.ScanChain.Domain.csproj"
             }
@@ -1681,6 +1700,8 @@
           "Microsoft.Extensions.DependencyInjection": "[8.0.0, )",
           "Microsoft.NETCore.App.Ref": "[8.0.0, )",
           "Newtonsoft.Json": "[13.0.3, )",
+          "Refit": "[8.0.0, )",
+          "Refit.HttpClientFactory": "[7.2.22, )",
           "Serilog.AspNetCore": "[8.0.3, )",
           "Serilog.Enrichers.Environment": "[3.0.1, )",
           "Serilog.Enrichers.Process": "[3.0.0, )",

@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -9,7 +10,7 @@ public static class StringExtension
     /// <summary>
     ///     Checks if the string is null or empty.
     /// </summary>
-    public static bool IsNullOrEmpty(this string? input)
+    public static bool IsNullOrEmpty([NotNullWhen(false)]this string? input)
     {
         return string.IsNullOrEmpty(input);
     }
@@ -17,7 +18,7 @@ public static class StringExtension
     /// <summary>
     ///     Checks if the string is null, empty, or consists only of whitespace.
     /// </summary>
-    public static bool IsNullOrWhiteSpace(this string? input)
+    public static bool IsNullOrWhiteSpace([NotNullWhen(false)]this string? input)
     {
         return string.IsNullOrWhiteSpace(input);
     }

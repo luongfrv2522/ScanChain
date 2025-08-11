@@ -18,6 +18,7 @@ C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\host\B39.ScanChain.Http
 C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\host\B39.ScanChain.HttpApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\host\B39.ScanChain.HttpApi\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\host\B39.ScanChain.HttpApi\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\host\B39.ScanChain.HttpApi\bin\Debug\net8.0\Refit.dll
 C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\host\B39.ScanChain.HttpApi\bin\Debug\net8.0\Serilog.dll
 C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\host\B39.ScanChain.HttpApi\bin\Debug\net8.0\Serilog.AspNetCore.dll
 C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\host\B39.ScanChain.HttpApi\bin\Debug\net8.0\Serilog.Enrichers.Environment.dll
@@ -63,3 +64,6 @@ C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\host\B39.ScanChain.Http
 C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\host\B39.ScanChain.HttpApi\obj\Debug\net8.0\B39.ScanChain.HttpApi.pdb
 C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\host\B39.ScanChain.HttpApi\obj\Debug\net8.0\B39.ScanChain.HttpApi.genruntimeconfig.cache
 C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\host\B39.ScanChain.HttpApi\obj\Debug\net8.0\ref\B39.ScanChain.HttpApi.dll
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\host\B39.ScanChain.HttpApi\bin\Debug\net8.0\Refit.HttpClientFactory.dll
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\host\B39.ScanChain.HttpApi\bin\Debug\net8.0\B39.Common.dll
+C:\Users\luong.ha\Documents\Dev\ScanChain\scan-chain-api\host\B39.ScanChain.HttpApi\bin\Debug\net8.0\B39.Common.pdb

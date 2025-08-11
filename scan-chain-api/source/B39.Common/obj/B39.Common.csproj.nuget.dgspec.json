@@ -50,6 +50,8 @@
             "Microsoft.Extensions.DependencyInjection": "[8.0.0, )",
             "Microsoft.NETCore.App.Ref": "[8.0.0, )",
             "Newtonsoft.Json": "[13.0.3, )",
+            "Refit": "[8.0.0, )",
+            "Refit.HttpClientFactory": "[7.2.22, )",
             "Serilog.AspNetCore": "[8.0.3, )",
             "Serilog.Enrichers.Environment": "[3.0.1, )",
             "Serilog.Enrichers.Process": "[3.0.0, )",

@@ -9,6 +9,7 @@
       "B39.ScanChain.Application/1.0.0": {
         "dependencies": {
           "AutoMapper": "14.0.0",
+          "B39.Common": "1.0.0",
           "B39.ScanChain.Domain": "1.0.0",
           "MediatR": "12.5.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.17",
@@ -335,6 +336,14 @@
           }
         }
       },
+      "B39.Common/1.0.0": {
+        "runtime": {
+          "B39.Common.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "B39.ScanChain.Domain/1.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "8.0.0"
@@ -598,6 +607,11 @@
       "sha512": "sha512-jlYdVOJrdeyD80ppEqKJ8BhJdrV3MjeA+seURdhC0DnD41GyUA9Ik+P7Sb571ufVVCYIx93GjeqVvY3QyQxZAA==",
       "path": "system.identitymodel.tokens.jwt/8.12.1",
       "hashPath": "system.identitymodel.tokens.jwt.8.12.1.nupkg.sha512"
+    },
+    "B39.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "B39.ScanChain.Domain/1.0.0": {
       "type": "project",

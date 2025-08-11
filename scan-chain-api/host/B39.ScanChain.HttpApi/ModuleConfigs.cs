@@ -5,10 +5,10 @@ namespace B39.ScanChain.HttpApi;
 
 public static class ModuleConfigs
 {
-    public static IServiceCollection AddModuleConfigs(this IServiceCollection services)
+    public static IServiceCollection AddModuleConfigs(this IServiceCollection services, IConfiguration config)
     {
         return services
             .AddApplicationConfig()
-            .AddInfrastructureConfig();
+            .AddInfrastructureConfig(config);
     }
 }

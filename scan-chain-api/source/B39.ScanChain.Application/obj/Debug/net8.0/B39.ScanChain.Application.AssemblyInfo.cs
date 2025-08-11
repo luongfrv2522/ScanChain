@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("B39.ScanChain.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+68ef55c0530cc4bcb5fe106c2fabeffcbb247443")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f98871cf5fb78e4a9dabad31c72f6046370769d9")]
 [assembly: System.Reflection.AssemblyProductAttribute("B39.ScanChain.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("B39.ScanChain.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

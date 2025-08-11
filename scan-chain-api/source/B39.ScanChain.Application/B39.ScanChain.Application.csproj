@@ -14,7 +14,13 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\B39.Common\B39.Common.csproj" />
       <ProjectReference Include="..\B39.ScanChain.Domain\B39.ScanChain.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="CQRS\Commands\" />
+      <Folder Include="Dtos\" />
     </ItemGroup>
 
 </Project>
