@@ -36,4 +36,12 @@ public static class EndpointExtension
             if (ActivatorUtilities.CreateInstance(app.ServiceProvider, type) is IEndpoint endpoint)
                 endpoint.MapEndpoint(app);
     }
+    
+    public static IEndpointConventionBuilder WithEndPointName<T>(this IEndpointConventionBuilder builder)
+    {
+        var typeName = typeof(T).Name;
+        if (typeName.EndsWith("Endpoint"))
+            typeName = typeName[..^"Endpoint".Length];
+        return builder.WithName(typeName);
+    }
 }

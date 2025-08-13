@@ -21,7 +21,7 @@ public class GetWalletInfoEndpoint : IEndpoint
     public void MapEndpoint(IEndpointRouteBuilder builder)
     {
         builder.MapGet<GetWalletInfoQuery, WalletInfo>("/wallet/info")
-            .WithName(nameof(GetWalletInfoEndpoint))
+            .WithEndPointName<GetWalletInfoEndpoint>()
             .WithTags("Wallet")
             .WithOpenApi()
             .AllowAnonymous();
