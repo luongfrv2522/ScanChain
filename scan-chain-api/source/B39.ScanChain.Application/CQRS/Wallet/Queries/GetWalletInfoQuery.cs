@@ -1,9 +1,7 @@
-using AutoMapper;
 using B39.Common.Extensions;
 using B39.ScanChain.Application.Exceptions;
 using B39.ScanChain.Application.Extensions;
 using B39.ScanChain.Application.Interfaces;
-using B39.ScanChain.Domain.Entities;
 using B39.ScanChain.Domain.Entities.Wallet;
 using B39.ScanChain.Domain.Interfaces.Repositories;
 using MediatR;
@@ -11,7 +9,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
 
-namespace B39.ScanChain.Application.CQRS.Queries;
+namespace B39.ScanChain.Application.CQRS.Wallet.Queries;
 
 public class GetWalletInfoQuery: IRequest<WalletInfo>
 {

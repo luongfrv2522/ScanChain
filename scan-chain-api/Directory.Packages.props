@@ -25,6 +25,9 @@
     <PackageVersion Include="Newtonsoft.Json" Version="13.0.3" />
     <!-- Optional: Newtonsoft.Json if needed -->
     <PackageVersion Include="AutoMapper" Version="14.0.0" />
+
+    <!-- Optional: Limit request -->
+    <PackageVersion Include="AspNetCoreRateLimit" Version="5.0.0" />
   </ItemGroup>
   <ItemGroup>
     <!--    Logging    -->

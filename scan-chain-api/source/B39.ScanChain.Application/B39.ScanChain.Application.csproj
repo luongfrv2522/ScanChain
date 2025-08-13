@@ -19,7 +19,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="CQRS\Commands\" />
+      <Folder Include="CQRS\Auth\Commands\" />
+      <Folder Include="CQRS\Wallet\Commands\" />
       <Folder Include="Dtos\" />
     </ItemGroup>
 

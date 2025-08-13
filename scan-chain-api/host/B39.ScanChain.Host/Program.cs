@@ -1,3 +1,4 @@
+using AspNetCoreRateLimit;
 using B39.ScanChain.Application.Extensions;
 using B39.ScanChain.Host;
 using B39.ScanChain.Host.Middlewares;
@@ -16,9 +17,11 @@ builder.Services.AddAuthorization();
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services
+    .AddRateLimiter(configs)
     .AddEndpointsApiExplorer()
     .AddSwaggerGen()
-    .AddModuleConfigs(configs);
+    .AddModuleConfigs(configs)
+    .AddAppCors(configs);
 
 builder.Host.UseSerilog((ctx, services, config) =>
 {
@@ -43,7 +46,11 @@ app.UseAuthorization();
 
 app.UseHttpsRedirection();
 
+app.UseIpRateLimiting();
+
 app.MapGroup("/api")
     .MapEndpoints();
+
+app.UseCors(Cors.PolicyName);
 
 app.Run();

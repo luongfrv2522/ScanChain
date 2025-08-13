@@ -3,7 +3,7 @@ using B39.ScanChain.Infrastructure;
 
 namespace B39.ScanChain.Host;
 
-public static class ModuleConfigs
+public static class Modules
 {
     public static IServiceCollection AddModuleConfigs(this IServiceCollection services, IConfiguration config)
     {

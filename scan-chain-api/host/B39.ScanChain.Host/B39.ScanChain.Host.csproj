@@ -25,10 +25,14 @@
     </ItemGroup>
     <ItemGroup>
         <PackageReference Include="Refit" />
+        <PackageReference Include="AspNetCoreRateLimit" />
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\..\source\B39.ScanChain.Application\B39.ScanChain.Application.csproj" />
       <ProjectReference Include="..\..\source\B39.ScanChain.Infrastructure\B39.ScanChain.Infrastructure.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Logs\" />
     </ItemGroup>
 
 </Project>
