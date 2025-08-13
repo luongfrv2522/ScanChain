@@ -1,7 +1,7 @@
 ﻿using System.Net;
 using B39.ScanChain.Application.Exceptions;
 
-namespace B39.ScanChain.HttpApi.Middlewares;
+namespace B39.ScanChain.Host.Middlewares;
 
 public class ExceptionHandlingMiddleware(
     RequestDelegate next,

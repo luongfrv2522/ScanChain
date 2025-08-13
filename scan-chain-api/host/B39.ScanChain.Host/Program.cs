@@ -1,6 +1,6 @@
 using B39.ScanChain.Application.Extensions;
-using B39.ScanChain.HttpApi;
-using B39.ScanChain.HttpApi.Middlewares;
+using B39.ScanChain.Host;
+using B39.ScanChain.Host.Middlewares;
 using B39.ScanChain.Infrastructure.Configurations;
 using Serilog;
 

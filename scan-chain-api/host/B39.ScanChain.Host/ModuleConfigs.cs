@@ -1,7 +1,7 @@
 ﻿using B39.ScanChain.Application;
 using B39.ScanChain.Infrastructure;
 
-namespace B39.ScanChain.HttpApi;
+namespace B39.ScanChain.Host;
 
 public static class ModuleConfigs
 {

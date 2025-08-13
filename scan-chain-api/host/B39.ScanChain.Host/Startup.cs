@@ -6,7 +6,7 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Refit;
 
-namespace B39.ScanChain.HttpApi;
+namespace B39.ScanChain.Host;
 
 public static class Startup
 {

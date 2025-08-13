@@ -12,7 +12,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B39.ScanChain.Infrastructur
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B39.Common", "source\B39.Common\B39.Common.csproj", "{8AE36B8D-BDB3-4C7E-ADE7-282BF2B32A13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B39.ScanChain.HttpApi", "host\B39.ScanChain.HttpApi\B39.ScanChain.HttpApi.csproj", "{B442FA55-1E65-4EBC-B000-FB104CD82715}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B39.ScanChain.Host", "host\B39.ScanChain.Host\B39.ScanChain.Host.csproj", "{B442FA55-1E65-4EBC-B000-FB104CD82715}"
 EndProject
 
 Global

@@ -1,4 +1,4 @@
-﻿namespace B39.ScanChain.HttpApi.Middlewares;
+﻿namespace B39.ScanChain.Host.Middlewares;
 
 public class ErrorHandlerResponse
 {
