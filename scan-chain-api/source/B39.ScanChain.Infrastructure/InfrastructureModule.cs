@@ -14,7 +14,8 @@ public static class InfrastructureModule
     public static IServiceCollection AddInfrastructureConfig(this IServiceCollection services, IConfiguration config)
     {
         return services.AddApiServices(config)
-            .AddScoped<IWalletRepository, MoralisWalletRepository>();
+            .AddScoped<IWalletRepository, MoralisWalletRepository>()
+            .AddAutoMapper(Assembly.GetExecutingAssembly());
     }
     
     private static IServiceCollection AddApiServices(this IServiceCollection services, IConfiguration config)

@@ -16,11 +16,10 @@ public class ExceptionHandlingMiddleware(
         }
         catch (Exception ex)
         {
-            logger.LogError(ex, "Unhandled exception occurred while processing request: {Path}", context.Request.Path);
+            logger.LogError(ex, "Unhandled exception: {Message} at {Path}", ex.Message, context.Request.Path);
 
             var response = context.Response;
             var errResponse = new ErrorHandlerResponse();
-            response.ContentType = "application/json";
             switch (ex)
             {
                 case AppException e:
@@ -29,11 +28,12 @@ public class ExceptionHandlingMiddleware(
                     errResponse.Error.Message = ex.Message;
                     break;
                 default:
+                    errResponse.Error.Code = "999";
+                    errResponse.Error.Message = ex.Message;
                     response.StatusCode = (int)HttpStatusCode.InternalServerError;
                     break;
             }
-
-            await context.Response.WriteAsJsonAsync(response);
+            await context.Response.WriteAsJsonAsync(errResponse);
         }
     }
 }
