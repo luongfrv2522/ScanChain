@@ -25,3 +25,10 @@ export function titleCase(str: string): string {
     .map(capitalize)
     .join(' ');
 }
+
+export function shorten(str?: string, chars: number = 4): string {
+  if (!str) return "";
+  const prefix = str.slice(0, chars + 2);
+  const suffix = str.slice(-chars);
+  return `${prefix}...${suffix}`;
+}

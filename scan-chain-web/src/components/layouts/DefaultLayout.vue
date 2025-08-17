@@ -69,6 +69,7 @@ const toggleTheme = () => {
 .n-layout-footer {
   text-align: center;
   padding: 16px;
+  margin-top: 40px;
 }
 
 .ad-side {

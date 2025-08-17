@@ -33,6 +33,7 @@ export interface WalletInfo {
      * @memberof WalletInfo
      */
     cursor?: string | null;
+    address?: string | null;
     /**
      *
      * @type {number}
