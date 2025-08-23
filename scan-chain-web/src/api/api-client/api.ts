@@ -13,6 +13,6 @@
  */
 
 
-export * from "./api";
-export * from "./configuration";
-export * from "./models";
+
+export * from './apis/wallet-api';
+

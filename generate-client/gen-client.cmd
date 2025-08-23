@@ -1,0 +1,1 @@
+curl -o swagger.json https://localhost:5002/swagger/v1/swagger.json && openapi-generator-cli generate -i swagger.json -g typescript-axios -o ./api-client --additional-properties=supportsES6=true,withSeparateModelsAndApi=true,modelPackage=models,apiPackage=apis

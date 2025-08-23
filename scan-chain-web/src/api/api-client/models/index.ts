@@ -1,4 +1,4 @@
-/* tslint:disable */
-/* eslint-disable */
-export * from './WalletInfo.ts';
-export * from './WalletToken.ts';
+export * from './wallet-info';
+export * from './wallet-token';
+export * from './wallet-transaction-item';
+export * from './wallet-transactions';

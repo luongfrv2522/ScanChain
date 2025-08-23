@@ -11,26 +11,25 @@ using Microsoft.AspNetCore.Routing;
 
 namespace B39.ScanChain.Application.CQRS.Wallet.Queries;
 
-public class GetWalletInfoQuery: IRequest<WalletInfo>, IEndpoint
+public class GetWalletTransactionsQuery: IRequest<WalletTransactions>, IEndpoint
 {
     public string? Address { set; get; }
-    
     public void MapEndpoint(IEndpointRouteBuilder builder)
     {
-        builder.MapGet<GetWalletInfoQuery, WalletInfo>("/wallet/info")
+        builder.MapGet<GetWalletTransactionsQuery, WalletTransactions>("/wallet/transactions")
             .WithTags("Wallet")
             .WithOpenApi()
             .AllowAnonymous();
     }
 }
 
-public class GetOneUserHandler(IWalletRepository walletRepository) : IRequestHandler<GetWalletInfoQuery, WalletInfo>
+public class GetWalletTransactionsHandler(IWalletRepository walletRepository) : IRequestHandler<GetWalletTransactionsQuery, WalletTransactions>
 {
-    public async Task<WalletInfo> Handle(GetWalletInfoQuery request, CancellationToken cancellationToken)
+    public async Task<WalletTransactions> Handle(GetWalletTransactionsQuery request, CancellationToken cancellationToken)
     {
         if (request.Address.IsNullOrEmpty()) throw new AppException("444");
 
-        var balance = await walletRepository.GetNativeAndErc20AndTokenBalance(request.Address);
+        var balance = await walletRepository.GetTransactions(request.Address);
         balance.Address = request.Address;
         return balance;
     }

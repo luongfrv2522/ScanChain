@@ -11,5 +11,7 @@ public class MapperProfile : Profile
     {
         CreateMap<WalletResponseModel, WalletInfo>();
         CreateMap<WalletTokenModel, WalletToken>();
+        CreateMap<WalletTransactionsModel, WalletTransactions>();
+        CreateMap<WalletTransactionItemModel, WalletTransactionItem>();
     }
 }

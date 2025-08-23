@@ -1,15 +1,17 @@
 <script setup lang="ts">
 import { computed, nextTick, ref } from 'vue'
-  import { isAddress } from 'ethers'
-  import { walletApi } from '@/api'
-  import type { GetWalletInfoEndpointRequest, WalletInfo, WalletToken } from '@/api/api-client'
-  import { formatCurrency, formatCurrencySmart } from '@/utils/number.ts'
-  import { ContentCopyFilled } from '@vicons/material'
-  import { copyToClipboard } from '@/utils/clipboard.ts'
-  import type { DataTableColumns } from 'naive-ui'
-  import { shorten } from '@/utils'
+import { isAddress } from 'ethers'
+import { walletApi } from '@/api'
+import type { WalletInfo, WalletToken } from '@/api/api-client'
+import { formatCurrency, formatCurrencySmart } from '@/utils/number.ts'
+import { ContentCopyFilled } from '@vicons/material'
+import { copyToClipboard } from '@/utils/clipboard.ts'
+import type { DataTableColumns } from 'naive-ui'
+import { shorten } from '@/utils'
+import data from './data.json'
+import { useCancelableRequest } from '@/composables/useCancelableRequest.ts'
 
-  const moralisChains = [
+const moralisChains = [
     { label: 'Ethereum Mainnet', value: '0x1' },
     { label: 'Ethereum Sepolia (Testnet)', value: '0xaa36a7' },
     { label: 'Ethereum Holesky (Testnet)', value: '0x4268' },
@@ -75,12 +77,10 @@ import { computed, nextTick, ref } from 'vue'
       console.error('Address search must be a valid address.')
       return;
     }
-    const request: GetWalletInfoEndpointRequest = {
-      address: searchVal.value
-    }
-    const response: WalletInfo = await walletApi.getWalletInfoEndpoint(request)
-    response.address = searchVal.value;
-    walletInfo.value = response;
+    const signal = useCancelableRequest();
+    const response = await walletApi.getWalletInfoQuery(searchVal.value, { signal })
+    if (response.status != 200) throw Error(response.statusText);
+    walletInfo.value = response.data;
     searching.value = false;
     await nextTick(() => {
       targetResult.value?.scrollIntoView({ behavior: 'smooth' })
@@ -159,13 +159,30 @@ import { computed, nextTick, ref } from 'vue'
             </n-flex>
           </n-flex>
         </n-card>
-        <n-card title="Token Balances">
-          <n-data-table
-            :columns="columns"
-            :data="walletTokensTableData"
-            :pagination="false"
-            :bordered="false"
-          />
+        <n-card>
+          <n-tabs
+            type="line"
+            size="large"
+            pane-wrapper-style="margin: 0 -4px"
+            pane-style="padding-left: 4px; padding-right: 4px; box-sizing: border-box;"
+            animated>
+            <n-tab-pane name="walletInfo" tab="Wallet info">
+              <n-data-table
+                :columns="columns"
+                :data="walletTokensTableData"
+                :pagination="false"
+                :bordered="false"
+              />
+            </n-tab-pane>
+            <n-tab-pane name="transactions" tab="Transactions">
+              <n-data-table
+                :columns="columns"
+                :data="walletTokensTableData"
+                :pagination="false"
+                :bordered="false"
+              />
+            </n-tab-pane>
+          </n-tabs>
         </n-card>
       </template>
     </div>

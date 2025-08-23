@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@vicons/material": "^0.13.0",
+    "axios": "^1.11.0",
     "ethers": "^6.15.0",
     "pinia": "^3.0.3",
     "vue": "^3.5.18",

@@ -13,4 +13,10 @@ public class MoralisWalletRepository(IMoralisWalletApi moralisWalletApi, IMapper
         var response = mapper.Map<WalletInfo>(result);
         return response;
     }
+    public async Task<WalletTransactions> GetTransactions(string address)
+    {
+        var result = await moralisWalletApi.GetTransactions(address);
+        var response = mapper.Map<WalletTransactions>(result);
+        return response;
+    }
 }

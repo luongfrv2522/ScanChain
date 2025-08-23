@@ -1,0 +1,345 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "ScanChain API",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/wallet/info": {
+      "get": {
+        "tags": [
+          "Wallet"
+        ],
+        "operationId": "GetWalletInfoQuery",
+        "parameters": [
+          {
+            "name": "Address",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/WalletInfo"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/wallet/transactions": {
+      "get": {
+        "tags": [
+          "Wallet"
+        ],
+        "operationId": "GetWalletTransactionsQuery",
+        "parameters": [
+          {
+            "name": "Address",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/WalletTransactions"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "WalletInfo": {
+        "type": "object",
+        "properties": {
+          "cursor": {
+            "type": "string",
+            "nullable": true
+          },
+          "page": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pageSize": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "blockNumber": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/WalletToken"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "WalletToken": {
+        "type": "object",
+        "properties": {
+          "tokenAddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "symbol": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "logo": {
+            "type": "string",
+            "nullable": true
+          },
+          "thumbnail": {
+            "type": "string",
+            "nullable": true
+          },
+          "decimals": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "balance": {
+            "type": "string",
+            "nullable": true
+          },
+          "possibleSpam": {
+            "type": "boolean"
+          },
+          "verifiedContract": {
+            "type": "boolean"
+          },
+          "totalSupply": {
+            "type": "string",
+            "nullable": true
+          },
+          "totalSupplyFormatted": {
+            "type": "string",
+            "nullable": true
+          },
+          "percentageRelativeToTotalSupply": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "securityScore": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "balanceFormatted": {
+            "type": "string",
+            "nullable": true
+          },
+          "usdPrice": {
+            "type": "number",
+            "format": "double"
+          },
+          "usdPrice24hrPercentChange": {
+            "type": "number",
+            "format": "double"
+          },
+          "usdPrice24hrUsdChange": {
+            "type": "number",
+            "format": "double"
+          },
+          "usdValue": {
+            "type": "number",
+            "format": "double"
+          },
+          "usdValue24hrUsdChange": {
+            "type": "number",
+            "format": "double"
+          },
+          "nativeToken": {
+            "type": "boolean"
+          },
+          "portfolioPercentage": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "WalletTransactionItem": {
+        "type": "object",
+        "properties": {
+          "hash": {
+            "type": "string",
+            "nullable": true
+          },
+          "nonce": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "transactionIndex": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fromAddressEntity": {
+            "type": "string",
+            "nullable": true
+          },
+          "fromAddressEntityLogo": {
+            "type": "string",
+            "nullable": true
+          },
+          "fromAddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "fromAddressLabel": {
+            "type": "string",
+            "nullable": true
+          },
+          "toAddressEntity": {
+            "type": "string",
+            "nullable": true
+          },
+          "toAddressEntityLogo": {
+            "type": "string",
+            "nullable": true
+          },
+          "toAddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "toAddressLabel": {
+            "type": "string",
+            "nullable": true
+          },
+          "value": {
+            "type": "string",
+            "nullable": true
+          },
+          "gas": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "gasPrice": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "input": {
+            "type": "string",
+            "nullable": true
+          },
+          "receiptCumulativeGasUsed": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "receiptGasUsed": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "receiptContractAddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "receiptRoot": {
+            "type": "string",
+            "nullable": true
+          },
+          "receiptStatus": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "blockTimestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "blockNumber": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "blockHash": {
+            "type": "string",
+            "nullable": true
+          },
+          "transferIndex": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "nullable": true
+          },
+          "transactionFee": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "WalletTransactions": {
+        "type": "object",
+        "properties": {
+          "cursor": {
+            "type": "string",
+            "nullable": true
+          },
+          "pageSize": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "page": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/WalletTransactionItem"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "Enter: Bearer {your token}",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}

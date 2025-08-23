@@ -16,7 +16,8 @@ public static class EndpointExtension
     {
         return builder.MapPost(path,
             async ([FromBody] TRequest request, IMediator mediator, CancellationToken cancellationToken) =>
-            await mediator.Send(request, cancellationToken));
+            await mediator.Send(request, cancellationToken)
+        ).WithEndPointName<TRequest>();
     }
 
     public static IEndpointConventionBuilder MapGet<TRequest, TResponse>(this IEndpointRouteBuilder builder,
@@ -24,7 +25,8 @@ public static class EndpointExtension
     {
         return builder.MapGet(path,
             async ([AsParameters] TRequest request, IMediator mediator, CancellationToken cancellationToken) =>
-            await mediator.Send(request, cancellationToken));
+            await mediator.Send(request, cancellationToken)
+        ).WithEndPointName<TRequest>();
     }
     
     public static void MapEndpoints(this IEndpointRouteBuilder app)
